@@ -11,6 +11,7 @@
     <link rel="icon" type="image/png" href="{{ asset('./assets/avatarzoom.jpeg') }}">
 
     <!-- Styles / Scripts -->
+    <script src="https://kit.fontawesome.com/b90e9e4354.js" crossorigin="anonymous"></script>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="bg-neutral-900">
@@ -129,14 +130,14 @@
         </div>
     </div>
 
-    <div class="sm:px-8 mt-12">
+    <div class="sm:px-8 mt-18">
         <div class="mx-auto w-full max-w-7xl lg:px-8">
             <div class="relative px-4 sm:px-8 lg:px-12">
                 <div class="mx-auto max-w-2xl lg:max-w-5xl">
-                    <div class="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-                        <h2 class="flex text-sm font-semibold text-neutral-700 dark:text-zinc-100">
+                    <div class="rounded-2xl py-6">
+                        <h2 class="flex text-sm font-semibold text-neutral-700 dark:text-zinc-100 items-center">
                             <i class="fas fa-code text-3xl"></i>
-                            <span class="ml-5 text-white font-sans font-bold mt-2">GitLab Repositories</span>
+                            <span class="ml-5 text-xl text-teal-500 font-sans font-bold">GitHub Repositories</span>
                         </h2>
                         <ol class="mt-6 space-y-8">
                             @foreach ($repositories as $repository)
@@ -147,7 +148,7 @@
                                                 {{ $repository->name }}
                                             </a>
                                         </h3>
-                                        <span class="bg-zinc-100 text-zinc-800 dark:bg-zinc-800 dark:text-zinc-200 rounded-full px-3 py-1 text-xs">
+                                        <span class="bg-zinc-100 text-zinc-800 dark:bg-zinc-800 dark:text-teal-500 rounded-full px-3 py-1 text-xs">
                                             {{ $repository->language ?? 'N/A' }}
                                         </span>
                                     </div>
